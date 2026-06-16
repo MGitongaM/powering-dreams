@@ -10,8 +10,8 @@ export default function HeroSection() {
       {/* <section className="conatiner mx-auto bg-cover bg-center px-4 py-16 min-h-[75dvh]" style={{ backgroundImage: `url(${heroImage1.src})` }}> */}
       <section className="max-w-7xl mx-auto rounded-t-lg bg-cover bg-center px-4 py-16 min-h-[75dvh]" style={{ backgroundImage: `url(${heroImage1.src})` }}>
         <div className="flex gap-8 justify-center">
-          <div className=" w-6/12 mx-auto space-y-8 text-slate-100 text-center ">
-            <h1 className="text-5xl font-bold">
+          <div className=" w-11/12 lg:w-6/12 mx-auto space-y-8 text-slate-100 text-center ">
+            <h1 className="text-3xl lg:text-5xl font-bold">
               The Next Generation of Ethical Leaders is Already Here. They Just
               Need the Power to Lead.
             </h1>

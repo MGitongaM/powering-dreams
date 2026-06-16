@@ -32,7 +32,7 @@ export default function SolutionSection() {
   return (
     <>
       <section className="container mx-auto bg-linear-to-b from-cyan-200  to-cyan-200 px-4 py-16 min-h-[75dvh]">
-        <div className="w-6/12 mx-auto">
+        <div className="w-11/12 lg:w-6/12 mx-auto">
           <h2 className="text-3xl font-bold text-center mb-8">
             How We Build Tomorrow&apos;s Visionaries: Raising leaders,
             transforming lives.
@@ -47,7 +47,7 @@ export default function SolutionSection() {
         <h3 className="text-xl font-bold text-center my-8">Our Three Core Pillars</h3>
         <div className="w-11/12 mx-auto  flex flex-wrap justify-center gap-8 mt-16">
           {solutions.map((solution) => (
-            <Card key={solution.id} className="w-3/12 ">
+            <Card key={solution.id} className="w-11/12 lg:w-3/12 ">
               <CardHeader className="grid place-content-center">
                 <CardTitle></CardTitle>
                 <CardDescription></CardDescription>

@@ -2,7 +2,7 @@ export default function ProblemSection() {
   return (
     <>
       <section className="container mx-auto px-4 bg-linear-to-b from-80% from-cyan-800 to-cyan-200 py-16 min-h-[75dvh] grid place-content-center" id="mission">
-        <div className="w-6/12 mx-auto">
+        <div className="w-11/12 lg:w-6/12 mx-auto">
             <h2 className="text-3xl font-bold text-center mb-8">
             Brilliance is Wasted in the Shadows of Inequality.
             </h2>

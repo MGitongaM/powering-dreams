@@ -34,7 +34,7 @@ export default function WhySection() {
   return (
     <>
       <section className="container mx-auto bg-cyan-200 rounded-lg px-4 py-16 min-h-[75dvh]" id="waysToGive">
-        <div className="w-6/12 mx-auto">
+        <div className="w-11/12 lg:w-6/12 mx-auto">
           <h2 className="text-3xl font-bold text-center mb-8">
             The Leaders of 2030 are Waiting on Us Today.
           </h2>
@@ -63,7 +63,7 @@ export default function WhySection() {
           {donations.map((donation) => (
             <Card
               key={donation.id}
-              className="w-3/12   h-[40dvh] flex flex-col justify-between"
+              className="w-11/12 lg:w-3/12   h-[40dvh] flex flex-col justify-between"
             >
               <CardHeader>
                 <CardTitle className="text-xl text-center font-bold">

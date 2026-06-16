@@ -7,7 +7,7 @@ export default function FooterSection() {
     <>
       <footer className="w-[90dvw] mx-auto px-4 py-16 mt-40 mb-8 rounded-lg bg-cyan-900">
         <div className="flex flex-wrap justify-between items-center text-slate-100 gap-8">
-          <div className="w-3/12">
+          <div className="w-11/12 mx-auto lg:w-3/12">
             <h3 className="text-3xl font-bold">
               Don&apos;t Just Witness the Future. Shape It.
             </h3>
@@ -18,7 +18,7 @@ export default function FooterSection() {
             alt="Hero Image"
             height={100}
             width={100}
-            className="object-cover rounded-lg w-20 mx-auto h-20 "
+            className="object-contain rounded-lg w-10/12 lg:w-20 mx-auto h-20 "
           />
           <p className="italic text-xs">
             Powering Dreams is a registered 501(c)(3) organization. All
@@ -33,7 +33,7 @@ export default function FooterSection() {
           </p>
         </div>
 
-          <div className="w-3/12">
+          <div className="w-12/12 mx-auto lg:w-3/12">
             <h3 className="text-xl text-balance font-bold">
               Join a network of philanthropists, executives, and
               changemakers dedicated to raising leaders and transforming lives.

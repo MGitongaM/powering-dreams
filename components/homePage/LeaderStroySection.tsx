@@ -7,8 +7,8 @@ export default function LeaderStroySection() {
           <h2 className="text-3xl font-bold text-center mb-8">
             Meet Amina: The Future You Are Funding
           </h2>
-          <div className="flex justify-between items-center gap-8">
-          <div className="w-4/12 mr-auto my-16">
+          <div className="flex flex-wrap lg:flex-nowrap justify-between items-center gap-8">
+          <div className="w-12/12 lg:w-4/12 mr-auto my-16">
             <p className="">
               Three years ago, Amina had a 4.0 GPA, a passion for community
               organizing, and no clear path forward. Raised by a single mother in
@@ -39,7 +39,7 @@ export default function LeaderStroySection() {
               hundreds of others. When you power a dream, you ignite a legacy.
             </p>
           </div>
-          <div className="w-8/12">
+          <div className="w-12/12 lg:w-8/12">
             <Image
                   src={heroImage}
                   alt="success story"
