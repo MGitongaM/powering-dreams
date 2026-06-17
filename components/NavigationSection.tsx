@@ -12,21 +12,21 @@ import Link from "next/link";
 import { Metadata } from "next";
 import heroImage1 from "../assets/opengraph-home.jpeg";
 
-const url=heroImage1 as unknown as string
-export const metadata:Metadata={
-    openGraph:{
-        images:[
-            {
-                width:1200,
-                height:627,
-                url
-            }
-        ]
-    },
-    title:"Powering Dreams",
-    description:" Potential is distributed equally, but opportunity is not. At Powering Dreams, we bridge the gap."
-
-}
+const url = heroImage1 as unknown as string;
+export const metadata: Metadata = {
+  openGraph: {
+    images: [
+      {
+        width: 1200,
+        height: 627,
+        url,
+      },
+    ],
+  },
+  title: "Powering Dreams",
+  description:
+    " Potential is distributed equally, but opportunity is not. At Powering Dreams, we bridge the gap.",
+};
 
 export default function NavigationSection() {
   return (
@@ -38,19 +38,16 @@ export default function NavigationSection() {
             <NavigationMenuItem>
               <NavigationMenuLink
                 render={<Link href="/" />}
-                className={navigationMenuTriggerStyle()}
+                className={`${navigationMenuTriggerStyle()}, hover:bg-transparent active:bg-transparent`}
               >
-                
-                  <Image
-                    src={footerLogoImage}
-                    alt="Hero Image"
-                    height={200}
-                    width={200}
-                    className="object-cover rounded-lg w-20 mx-auto h-20 "
-                  />
-                
+                <Image
+                  src={footerLogoImage}
+                  alt="Hero Image"
+                  height={200}
+                  width={200}
+                  className="object-cover rounded-lg w-20 mx-auto h-20 "
+                />
               </NavigationMenuLink>
-              
             </NavigationMenuItem>
             <div className="flex  justify-end  gap-2">
               <NavigationMenuItem>
@@ -61,54 +58,30 @@ export default function NavigationSection() {
                   <Link href="/#mission">Our Mission</Link>
                 </NavigationMenuLink> */}
                 <NavigationMenuLink
-                render={<Link href="/#mission" />}
-                className={ navigationMenuTriggerStyle()}
+                  render={<Link href="/#mission" />}
+                  className={`${navigationMenuTriggerStyle()}, font-bold hover:bg-cyan-200 active:bg-cyan-400`}
                 >
-                Our Mission
+                  Our Mission
                 </NavigationMenuLink>
                 <NavigationMenuLink
-                render={<Link href="/#impact" />}
-                className={navigationMenuTriggerStyle()}
+                  render={<Link href="/#impact" />}
+                  className={`${navigationMenuTriggerStyle()}, font-bold hover:bg-cyan-200 active:bg-cyan-400`}
                 >
-                The Impact
+                  The Impact
                 </NavigationMenuLink>
                 <NavigationMenuLink
-                render={<Link href="#successStory" />}
-                className={navigationMenuTriggerStyle()}
+                  render={<Link href="#successStory" />}
+                  className={`${navigationMenuTriggerStyle()}, font-bold hover:bg-cyan-200 active:bg-cyan-400`}
                 >
-                Success Story
+                  Success Story
                 </NavigationMenuLink>
                 <NavigationMenuLink
-                render={<Link href="#waysToGive" />}
-                className={navigationMenuTriggerStyle()}
+                  render={<Link href="#waysToGive" />}
+                  className={`${navigationMenuTriggerStyle()}, font-bold hover:bg-cyan-200 active:bg-cyan-400`}
                 >
-                Ways To Give
+                  Ways To Give
                 </NavigationMenuLink>
               </NavigationMenuItem>
-              {/* <NavigationMenuItem>
-                <NavigationMenuLink
-                  asChild
-                  className={navigationMenuTriggerStyle()}
-                >
-                  <Link href="/#impact">The Impact</Link>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink
-                  asChild
-                  className={navigationMenuTriggerStyle()}
-                >
-                  <Link href="/#successStory">Success Story</Link>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink
-                  asChild
-                  className={navigationMenuTriggerStyle()}
-                >
-                  <Link href="/#waysToGive">Ways To Give</Link>
-                </NavigationMenuLink>
-              </NavigationMenuItem> */}
             </div>
           </NavigationMenuList>
         </NavigationMenu>

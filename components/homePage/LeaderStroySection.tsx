@@ -1,5 +1,5 @@
 import Image from "next/image";
-import heroImage from "../../assets/success-story.png";
+import successStoryImage from "../../assets/success-story1.png";
 export default function LeaderStroySection() {
   return (
     <>
@@ -41,7 +41,7 @@ export default function LeaderStroySection() {
           </div>
           <div className="w-12/12 lg:w-8/12">
             <Image
-                  src={heroImage}
+                  src={successStoryImage}
                   alt="success story"
                   height={500}
                   width={500}
