@@ -9,24 +9,7 @@ import {
 import footerLogoImage from "../assets/footer-logo.jpeg";
 import Image from "next/image";
 import Link from "next/link";
-import { Metadata } from "next";
-import heroImage1 from "../assets/opengraph-home.jpeg";
 
-const url = heroImage1 as unknown as string;
-export const metadata: Metadata = {
-  openGraph: {
-    images: [
-      {
-        width: 1200,
-        height: 627,
-        url,
-      },
-    ],
-  },
-  title: "Powering Dreams",
-  description:
-    " Potential is distributed equally, but opportunity is not. At Powering Dreams, we bridge the gap.",
-};
 
 export default function NavigationSection() {
   return (
