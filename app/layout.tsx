@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-const url = heroImage1 as unknown as string;
+const url = heroImage1.src 
 
 export const metadata: Metadata = {
     openGraph: {
